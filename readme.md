@@ -36,6 +36,14 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 # NOTES - m
 
+# PRACTICAL SESSION.
+
+* [ ] Create 2 files of your own.
+* [ ] Stage the 2 files and unstage one file.
+* [ ] Commit the remaining staged file.
+* [ ] Stage the unstaged file.
+* [ ] Commit the stage.
+
 **Ways on how to name files/folders**
 
 * **use-a-hyphen**
