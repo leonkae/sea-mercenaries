@@ -1,1 +1,129 @@
-/* ctrl + / = this adds a comment */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+.parent-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-parent-wrapper {
+  height: 562px;
+  width: 391px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 48px;
+  background-color: #000000cb;
+}
+.tomattoe-div {
+  height: 542px;
+  width: 371px;
+  border-radius: 40px;
+  position: relative;
+}
+.tomattoe-div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+.tomato-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+.tomato-overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    rgb(255, 241, 241),
+    rgba(0, 0, 0, 0)
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+.inner-tomato-overlay {
+  height: 100%;
+  border-radius: 40px;
+  position: relative;
+}
+.inner-tomato-x {
+  position: absolute;
+  bottom: 10px;
+  margin: 20px;
+  width: calc(100% - 40px);
+  z-index: 10;
+}
+.name-x-badge,
+.description-x-badge,
+.cta-x-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name-x-badge h1{
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 15px;
+    color: white;
+    /* flex-grow: 1; */
+}
+.description-x-badge p{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.icon-profile img,
+.name-x-badge img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    object-position: center;
+    padding: 5px;
+}
+.activity-x,
+.profiles-x{
+    display: flex;
+    align-items: center;
+}
+.icon-number h3{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.follow-x{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+    border-radius: 50px;
+    background-color: white;
+}
+.follow-x h3{
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
