@@ -11,6 +11,11 @@
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 1000px) {
+  .parent-wrapper {
+    background-color: rgb(8, 8, 8);
+  }
+}
 .inner-parent-wrapper {
   height: 562px;
   width: 391px;
@@ -20,12 +25,36 @@
   border-radius: 48px;
   background-color: #000000cb;
 }
+.mobile-nav {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .mobile-nav {
+    display: contents;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .inner-parent-wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    background-color: rgba(8, 8, 8, 0);
+  }
+}
 .tomattoe-div {
   height: 542px;
   width: 371px;
   border-radius: 40px;
   position: relative;
 }
+@media screen and (max-width: 1000px) {
+  .tommattoe-div {
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+  }
+}
+
 .tomattoe-div img {
   height: 100%;
   width: 100%;
@@ -172,6 +201,11 @@
   background-color: whitesmoke;
   border-radius: 25px;
   padding: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .nav-parent {
+    display: none;
+  }
 }
 .profile-picture {
   height: 50px;
