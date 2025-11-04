@@ -105,3 +105,73 @@ daysOfWeek(1);
 daysOfWeek(4);
 daysOfWeek(7);
 daysOfWeek(9);  
+
+//program flow loops
+// as long as a conditio evaluates to true  while loop will run
+
+let i =  0;
+
+// while(i < 5){
+//     console.log(i);
+//     // i++;
+// }
+
+// while(true){
+//   console.log(i);
+//   i++;
+
+//   if (i > 1) break;
+// }
+
+
+let j = 0;
+
+do {
+  console.log(j);
+  j++;
+}while(j < 5);
+
+// for loop 
+
+for(let k = 0; k < 5; k++){
+    console.log(k);
+}
+
+//for in and for of loops
+
+let fruits = ["mango", "banana", "orange"];
+
+for(let index in fruits){
+    console.log(index); 
+    console.log(fruits[index]);
+}
+
+for(let fruit of fruits){
+    console.log(fruit);
+}
+
+for (let a = 1; a <= 5; a++) {
+  // if (a === 3) continue;
+  // console.log(a); 
+  if (a === 4) break;
+  console.log(a);
+}
+
+let car = {
+  make: "Benz",
+  model: "S-class",
+  color: "black",
+  year: 2025,
+  seats : 4,
+  start: function(){
+    console.log("Welcome sir, S-class ready!");
+  }
+}
+
+console.log(car);
+car.start();
+
+for(let key in car){
+    console.log(key);
+    console.log(car[key]);
+} 
