@@ -1,3 +1,18 @@
+// document.getElementById("profile-name").textContent =
+//   "Welcome again , Sophia Benette";
+
+// document.getElementById("logout-button").onclick = function () {
+
+//   const userLog = document.getElementById("parent-wrapper");
+//   userLog.style.display = "none";
+
+//   document.getElementById("logout-button").textContent = "Sign in";
+
+// };
+
+// const usernaame = document.getElementById("profile-name");
+// usernaame.style.color = "red";
+
 // External script
 
 console.log("Data siphoning complete 🤣 Gatchaaaa !!");
@@ -49,8 +64,6 @@ if (x === 10) {
   console.log("x is not 10");
 }
 
-
-
 function bedtime(age){
 
   const childAge = Number(age);
@@ -64,7 +77,7 @@ function bedtime(age){
   }
 }
 
-bedtime(3) 
+bedtime(3)
 bedtime(6)
 bedtime(5)
 bedtime(10)
@@ -72,7 +85,7 @@ bedtime(15)
 
 function daysOfWeek(dayNumber) {
 
- const dayNum = Number(dayNumber); 
+ const dayNum = Number(dayNumber);
 
  switch(dayNum) {
     case 1:
@@ -104,7 +117,7 @@ function daysOfWeek(dayNumber) {
 daysOfWeek(1);
 daysOfWeek(4);
 daysOfWeek(7);
-daysOfWeek(9);  
+daysOfWeek(9);
 
 //program flow loops
 // as long as a conditio evaluates to true  while loop will run
@@ -123,7 +136,6 @@ let i =  0;
 //   if (i > 1) break;
 // }
 
-
 let j = 0;
 
 do {
@@ -131,7 +143,7 @@ do {
   j++;
 }while(j < 5);
 
-// for loop 
+// for loop
 
 for(let k = 0; k < 5; k++){
     console.log(k);
@@ -142,7 +154,7 @@ for(let k = 0; k < 5; k++){
 let fruits = ["mango", "banana", "orange"];
 
 for(let index in fruits){
-    console.log(index); 
+    console.log(index);
     console.log(fruits[index]);
 }
 
@@ -152,7 +164,7 @@ for(let fruit of fruits){
 
 for (let a = 1; a <= 5; a++) {
   // if (a === 3) continue;
-  // console.log(a); 
+  // console.log(a);
   if (a === 4) break;
   console.log(a);
 }
@@ -174,4 +186,13 @@ car.start();
 for(let key in car){
     console.log(key);
     console.log(car[key]);
-} 
+}
+
+let arrayOfCars = ["BMW", "Audi", "Benz", "Lexus"];
+let arrayofbuses = ["Volvo", "Scania", "Tata"];
+
+arrayOfCars = arrayOfCars.concat(arrayofbuses);
+console.log(arrayOfCars);
+
+arrayOfCars = [...arrayOfCars, ...arrayofbuses];
+console.log(arrayOfCars);
